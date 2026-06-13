@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KatsuBie - Katsu & Kimbab Garut</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="Asset/css/style.css">
+</head>
+<body>
+
+   <nav class="navbar-custom">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h2 class="text-white fw-bold m-0" style="letter-spacing: 1px;">KatsuBie</h2>
+            
+            <div class="d-flex gap-3">
+                <button class="btn btn-light rounded-pill d-flex align-items-center gap-2 fw-bold comic-border px-3">
+                    <img src="Asset/img/icons8-basket-24 (1).png" alt="Keranjang" width="20" height="20">
+                    Keranjang
+                </button>
+
+                <button class="btn btn-warning rounded-pill d-flex align-items-center gap-2 fw-bold comic-border px-4">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1144/1144760.png" alt="Login" width="20" height="20">
+                    Login
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7 text-center text-md-start mb-4 mb-md-0 z-1">
+                    <h1 class="fw-bold display-5 mb-3">Katsu & Kimbab<br>Otentik, Roso Garut</h1>
+                    <a href="#menu-area" class="btn btn-katsu-yellow text-decoration-none">Lihat Menu</a>
+                </div>
+                <div class="col-md-5 text-center position-relative">
+                    <img src="Asset/img/mskt1.png" alt="Maskot KatsuBie" class="img-fluid" style="max-height: 350px; margin-bottom: -5px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container my-5" id="menu-area"> 
+        <div class="category-scroll mb-5">
+            <a href="#" class="cat-btn active">Menu Katsu</a>
+            <a href="#" class="cat-btn">Menu Chicken</a>
+            <a href="#" class="cat-btn">Menu Kimbab</a>
+            <a href="#" class="cat-btn">Menu Burger</a>
+            <a href="#" class="cat-btn">Menu Kebab</a>
+            <a href="#" class="cat-btn">Menu French Fries</a>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h3 class="fw-bold m-0">MENU KATSU</h3>
+                    <span class="badge comic-border bg-white text-dark px-3 py-2">Gratis Pilih 1 Sauce</span>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="menu-card comic-border p-3">
+                            <div class="menu-img-placeholder">
+                                FOTO PRODUK<br>AKAN DIUPDATE
+                            </div>
+                            <h5 class="fw-bold mb-1">KatsuBie Ori</h5>
+                            <p class="text-muted mb-2">(S/M/L)</p>
+                            <h5 class="fw-bold text-danger m-0">Mulai Rp 8.000</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="menu-card comic-border p-3">
+                            <div class="menu-img-placeholder">
+                                FOTO PRODUK<br>AKAN DIUPDATE
+                            </div>
+                            <h5 class="fw-bold mb-1">KatsuBie Paket Nasi</h5>
+                            <p class="text-muted mb-2">(S/M/L)</p>
+                            <h5 class="fw-bold text-danger m-0">Mulai Rp 12.000</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="menu-card comic-border p-3">
+                            <div class="menu-img-placeholder">
+                                FOTO PRODUK<br>AKAN DIUPDATE
+                            </div>
+                            <h5 class="fw-bold mb-1">Chicken Thighbie</h5>
+                            <p class="text-muted mb-2">(S/M/L)</p>
+                            <h5 class="fw-bold text-danger m-0">Mulai Rp 16.000</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <h3 class="fw-bold mb-3">Lokasi</h3>
+                <div class="lokasi-card comic-border">
+                    <div class="map-placeholder">
+                        [ ILUSTRASI PETA GARUT ]
+                    </div>
+                    <h5 class="fw-bold">Lokasi</h5>
+                    <p class="small text-muted mb-4">
+                        Samping Tugu Leuwidaun, Garut.<br>
+                        Jawa Barat.
+                    </p>
+                    
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <button class="btn btn-deliv btn-grab" data-bs-toggle="modal" data-bs-target="#orderModal"><i class="fa-solid fa-motorcycle"></i> GrabFood</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-deliv btn-gojek" data-bs-toggle="modal" data-bs-target="#orderModal"><i class="fa-solid fa-motorcycle"></i> gofood</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-deliv btn-shopee" data-bs-toggle="modal" data-bs-target="#orderModal"><i class="fa-solid fa-bag-shopping"></i> ShopeeFood</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-deliv btn-wa" data-bs-toggle="modal" data-bs-target="#orderModal"><i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="orderModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content comic-border border-3">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold">Hapunten Pisan! 🙏</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pt-3 pb-4">
+                    <p>Sistem <em>delivery</em> internal KatsuBie nuju di-<em>upgrade</em> nih, jadi kurir kita belum bisa kirim langsung.</p>
+                    <p class="mb-4">Biar nggak keburu ngiler, pesen lewat aplikasi andalan di bawah ini aja yuk!</p>
+                    
+                    <div class="d-grid gap-2">
+                        <a href="#" class="btn btn-success fw-bold comic-border">GrabFood / GoFood</a>
+                        <a href="#" class="btn btn-warning text-white fw-bold comic-border" style="background-color: #ee4d2d;">ShopeeFood</a>
+                        <a href="#" class="btn btn-outline-success fw-bold mt-2 comic-border">Chat via WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

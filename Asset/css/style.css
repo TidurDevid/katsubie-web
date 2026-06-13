@@ -1,0 +1,118 @@
+:root {
+            --bg-cream: #fbf5e9;
+            --katsu-red: #8b1820;
+            --katsu-dark-red: #6b1016;
+            --katsu-yellow: #ffc947;
+            --outline-dark: #1a1a1a;
+        }
+
+        body {
+            background-color: var(--bg-cream);
+            font-family: 'Nunito', sans-serif;
+            color: var(--outline-dark);
+        }
+        .comic-border {
+            border: 2px solid var(--outline-dark);
+            border-radius: 12px;
+        }
+        .navbar-custom {
+            background-color: var(--katsu-dark-red);
+            padding: 15px 0;
+            border-bottom: 3px solid var(--outline-dark);
+        }
+        .hero-section {
+            background-color: var(--katsu-red);
+            color: white;
+            padding: 40px 0 0 0;
+            border-bottom: 3px solid var(--outline-dark);
+            position: relative;
+            overflow: hidden;
+            background-image: radial-gradient(circle at center, rgba(255,255,255,0.05) 0, rgba(255,255,255,0.05) 2px, transparent 2px);
+            background-size: 20px 20px;
+        }
+
+        .btn-katsu-yellow {
+            background-color: var(--katsu-yellow);
+            color: var(--outline-dark);
+            font-weight: 800;
+            padding: 10px 30px;
+            border-radius: 50px;
+            border: 2px solid var(--outline-dark);
+            box-shadow: 2px 4px 0px var(--outline-dark);
+            transition: all 0.2s;
+        }
+        .btn-katsu-yellow:hover {
+            transform: translateY(2px);
+            box-shadow: 0px 2px 0px var(--outline-dark);
+        }
+        .category-scroll {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding-bottom: 10px;
+            scrollbar-width: none;
+        }
+        .category-scroll::-webkit-scrollbar { display: none; }
+        
+        .cat-btn {
+            white-space: nowrap;
+            padding: 8px 24px;
+            font-weight: 700;
+            border-radius: 50px;
+            background-color: white;
+            color: var(--outline-dark);
+            border: 2px solid var(--outline-dark);
+            text-decoration: none;
+        }
+        .cat-btn.active {
+            background-color: #d12a2a;
+            color: white;
+        }
+        .menu-card {
+            background-color: white;
+            height: 100%;
+            transition: transform 0.2s;
+        }
+        .menu-card:hover { transform: translateY(-5px); }
+        
+        .menu-img-placeholder {
+            background-color: var(--bg-cream);
+            height: 180px;
+            border-radius: 8px;
+            border: 2px solid var(--outline-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-weight: 700;
+            color: #666;
+            margin-bottom: 15px;
+            background-image: repeating-linear-gradient(45deg, #f0e7d5 0, #f0e7d5 2px, transparent 2px, transparent 8px);
+        }
+        .lokasi-card {
+            background-color: white;
+            padding: 20px;
+        }
+        .map-placeholder {
+            background-color: var(--bg-cream);
+            height: 200px;
+            border-radius: 8px;
+            border: 2px solid var(--outline-dark);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .btn-deliv {
+            font-weight: 700;
+            border: 2px solid var(--outline-dark);
+            border-radius: 8px;
+            color: white;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        .btn-grab { background-color: #00b14f; }
+        .btn-gojek { background-color: #ee2737; }
+        .btn-shopee { background-color: #ee4d2d; }
+        .btn-wa { background-color: #25d366; }
