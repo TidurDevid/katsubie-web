@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KATSUBIE — Authentic Street Food</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CURSOR GLOW -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- LOADER -->
+<div class="page-loader" id="pageLoader">
+  <div class="loader-inner">
+    <div class="loader-logo">KATSUBIE</div>
+    <div class="loader-bar"><div class="loader-fill" id="loaderFill"></div></div>
+    <div class="loader-text">Menyiapkan pengalaman terbaik…</div>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+  <div class="container">
+    <a class="navbar-brand-custom" href="#">
+      <span class="brand-icon"><i class="bi bi-fire"></i></span>
+      <span class="brand-text">KATSUBIE</span>
+    </a>
+    <button class="navbar-toggler-custom" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center gap-1">
+        <li class="nav-item"><a class="nav-link-custom" href="#home">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link-custom" href="#about">Tentang</a></li>
+        <li class="nav-item"><a class="nav-link-custom" href="#catalog">Menu</a></li>
+        <li class="nav-item"><a class="nav-link-custom" href="#testimony">Ulasan</a></li>
+        <li class="nav-item"><a class="nav-link-custom" href="#location">Lokasi</a></li>
+        <li class="nav-item ms-2">
+          <a class="btn-nav-cta" href="https://wa.me/6281234567890" target="_blank">
+            <i class="bi bi-whatsapp me-1"></i> Pesan Sekarang
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero-section">
+  <div class="hero-bg-overlay"></div>
+  <div class="hero-grain"></div>
+  <!-- Floating orbs -->
+  <div class="hero-orb orb-1"></div>
+  <div class="hero-orb orb-2"></div>
+  <div class="hero-orb orb-3"></div>
+
+  <div class="container hero-content">
+    <div class="row align-items-center min-vh-100">
+      <div class="col-lg-7">
+        <div class="hero-eyebrow" data-aos="fade-right" data-aos-delay="200">
+          <span class="eyebrow-dot"></span> Garut's Finest Street Food
+        </div>
+        <h1 class="hero-title" data-aos="fade-right" data-aos-delay="350">
+          <span class="title-line-1">RASA</span>
+          <span class="title-line-2">YANG TAK</span>
+          <span class="title-line-3">TERLUPAKAN<span class="title-dot">.</span></span>
+        </h1>
+        <p class="hero-desc" data-aos="fade-right" data-aos-delay="500">
+          Katsu renyah, kimbab segar, burger juicy, kebab gurih semuanya diracik dengan bahan premium dan cinta. Satu gigitan, langsung ketagihan.
+        </p>
+        <div class="hero-actions" data-aos="fade-up" data-aos-delay="650">
+          <a href="#catalog" class="btn-hero-primary">
+            <span>Jelajahi Menu</span>
+            <i class="bi bi-arrow-right-circle-fill"></i>
+          </a>
+          <a href="https://wa.me/6281234567890" target="_blank" class="btn-hero-wa">
+            <i class="bi bi-whatsapp"></i>
+            <span>Order via WA</span>
+          </a>
+        </div>
+        <div class="hero-stats" data-aos="fade-up" data-aos-delay="800">
+          <div class="stat-item">
+            <div class="stat-number" data-target="500">0</div>
+            <div class="stat-label">Pelanggan / hari</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="15">0</div>
+            <div class="stat-label">Varian Menu</div>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="5">0</div>
+            <div class="stat-label">Bintang Rating</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-5 d-none d-lg-flex justify-content-center" data-aos="zoom-in" data-aos-delay="400">
+        <div class="hero-img-stack">
+          <div class="hero-float-card card-1">
+            <i class="bi bi-fire"></i> Best Seller
+          </div>
+          <div class="hero-circle-img">
+            <img src="https://images.unsplash.com/photo-1518492104633-130d0cc84637?w=500&q=80" alt="Katsubie Food">
+          </div>
+          <div class="hero-float-card card-2">
+            <i class="bi bi-star-fill"></i> 4.9 Rating
+          </div>
+          <div class="hero-float-card card-3">
+            <i class="bi bi-clock-fill"></i> Buka 10–21
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- MARQUEE BANNER -->
+<div class="marquee-section">
+  <div class="marquee-track">
+    <div class="marquee-content">
+      <span>KATSU RENYAH</span><span class="mx">✦</span>
+      <span>KIMBAB SEGAR</span><span class="mx">✦</span>
+      <span>BURGER JUICY</span><span class="mx">✦</span>
+      <span>KEBAB GURIH</span><span class="mx">✦</span>
+      <span>KATSU RENYAH</span><span class="mx">✦</span>
+      <span>KIMBAB SEGAR</span><span class="mx">✦</span>
+      <span>BURGER JUICY</span><span class="mx">✦</span>
+      <span>KEBAB GURIH</span><span class="mx">✦</span>
+      <span>KATSU RENYAH</span><span class="mx">✦</span>
+      <span>KIMBAB SEGAR</span><span class="mx">✦</span>
+      <span>BURGER JUICY</span><span class="mx">✦</span>
+      <span>KEBAB GURIH</span><span class="mx">✦</span>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT / STORY -->
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right" data-aos-duration="900">
+        <div class="about-img-grid">
+          <div class="about-img-main">
+            <img src="/assets/foto/katalog/burger/1.jpg" alt="Katsubie Kitchen">
+          </div>
+          <div class="about-img-accent">
+            <img src="/assets/foto/katalog/burger/1.jpg" alt="Katsubie Product">
+          </div>
+          <div class="about-badge-float">
+            <i class="bi bi-award-fill"></i>
+            <span>Since<br><strong>2025</strong></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left" data-aos-duration="900">
+        <div class="section-eyebrow">Cerita Kami</div>
+        <h2 class="section-heading">Lahir dari Passion,<br>Tumbuh dari <em>Kepercayaan</em></h2>
+        <p class="section-body">Katsubie berdiri dengan satu misi sederhana: menghadirkan makanan street food berkualitas tinggi dengan harga yang bersahabat. Setiap produk kami dibuat dari bahan bahan pilihan, tanpa bahan pengawet, dan dengan resep yang terus disempurnakan.</p>
+        <div class="about-features">
+          <div class="about-feat-item">
+            <div class="feat-icon"><i class="bi bi-check-circle-fill"></i></div>
+            <div>
+              <strong>Bahan Segar Premium</strong>
+              <p>Daging dan sayuran dipilih setiap hari dari supplier terpercaya.</p>
+            </div>
+          </div>
+          <div class="about-feat-item">
+            <div class="feat-icon"><i class="bi bi-check-circle-fill"></i></div>
+            <div>
+              <strong>Resep Original</strong>
+              <p>Bumbu khas Katsubie yang tak tertandingi, diracik sendiri sejak awal.</p>
+            </div>
+          </div>
+          <div class="about-feat-item">
+            <div class="feat-icon"><i class="bi bi-check-circle-fill"></i></div>
+            <div>
+              <strong>Higienis & Halal</strong>
+              <p>Dapur bersih, prosedur ketat, dan tentu saja 100% halal.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATALOG -->
+<section id="catalog" class="catalog-section">
+  <div class="container">
+    <div class="catalog-header" data-aos="fade-up">
+      <div class="section-eyebrow">Menu Kami</div>
+      <h2 class="section-heading center">Pilihan <em>Terbaik</em> untuk Kamu</h2>
+      <p class="section-subtext">Setiap menu kami adalah karya dari bahan terbaik, untuk pengalaman terbaik.</p>
+    </div>
+
+    <!-- Tab Pills -->
+    <div class="menu-tabs-wrap" data-aos="fade-up" data-aos-delay="100">
+      <div class="menu-tabs" id="menuTabs">
+        <button class="menu-tab active" data-tab="katsu">
+          <span class="tab-icon">🍱</span> Menu Katsu
+        </button>
+        <button class="menu-tab" data-tab="kimbab">
+          <span class="tab-icon">🍙</span> Menu Kimbab
+        </button>
+        <button class="menu-tab" data-tab="burger">
+          <span class="tab-icon">🍔</span> Menu Burger
+        </button>
+        <button class="menu-tab" data-tab="kebab">
+          <span class="tab-icon">🌯</span> Menu Kebab
+        </button>
+      </div>
+    </div>
+
+    <!-- Tab Contents -->
+    <div class="menu-content-area">
+      <!-- KATSU -->
+      <div class="menu-pane active" id="tab-katsu">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="food-card">
+              <div class="food-img-wrap">
+                <img src="/assets/foto/katalog/katsu/1.jpg" alt="Katsubie Ori">
+                <div class="food-badge badge-red">⭐ Best Seller</div>
+                <div class="food-overlay">
+                  <button class="btn-order-now" onclick="orderWA('Katsubie Ori', 'Rp 12.000')">
+                    <i class="bi bi-whatsapp me-1"></i> Order Sekarang
+                  </button>
+                </div>
+              </div>
+              <div class="food-body">
+                <div class="food-meta">
+                  <span class="food-cat">Katsu</span>
+                  <div class="food-stars">★★★★★</div>
+                </div>
+                <h4 class="food-name">Katsubie Ori</h4>
+                <p class="food-desc">Ayam crispy original ala Katsubie, renyah di luar, juicy di dalam. Disajikan dengan saus spesial.</p>
+                <div class="food-footer">
+                  <span class="food-price">Rp 12.000</span>
+                  <button class="btn-add-to-order" onclick="orderWA('Katsubie Ori', 'Rp 12.000')">
+                    <i class="bi bi-bag-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="food-card">
+              <div class="food-img-wrap">
+                <img src="/assets/foto/katalog/katsu/2.jpg" alt="Katsubie Sauce">
+                <div class="food-badge badge-red">⭐ Best Seller</div>
+                <div class="food-overlay">
+                  <button class="btn-order-now" onclick="orderWA('Katsubie Sauce', 'Rp 20.000')">
+                    <i class="bi bi-whatsapp me-1"></i> Order Sekarang
+                  </button>
+                </div>
+              </div>
+              <div class="food-body">
+                <div class="food-meta">
+                  <span class="food-cat">Katsu</span>
+                  <div class="food-stars">★★★★★</div>
+                </div>
+                <h4 class="food-name">Katsubie Sauce</h4>
+                <p class="food-desc">Versi premium dengan pilihan saus yang bisa dikustomisasi — pedas, manis, atau mix all!</p>
+                <div class="food-footer">
+                  <span class="food-price">Rp 20.000</span>
+                  <button class="btn-add-to-order" onclick="orderWA('Katsubie Sauce', 'Rp 20.000')">
+                    <i class="bi bi-bag-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="food-card featured-card">
+              <div class="food-img-wrap">
+                <img src="/assets/foto/katalog/katsu/3.jpg" alt="Katsubie Rice Box">
+                <div class="food-badge badge-gold">🔥 Spesial</div>
+                <div class="food-overlay">
+                  <button class="btn-order-now" onclick="orderWA('Katsubie Rice Box', 'Rp 25.000')">
+                    <i class="bi bi-whatsapp me-1"></i> Order Sekarang
+                  </button>
+                </div>
+              </div>
+              <div class="food-body">
+                <div class="food-meta">
+                  <span class="food-cat">Katsu</span>
+                  <div class="food-stars">★★★★★</div>
+                </div>
+                <h4 class="food-name">Katsubie Rice Box</h4>
+                <p class="food-desc">Paket lengkap — katsu crispy + nasi hangat + saus rahasia. Kenyang, puas, terjangkau!</p>
+                <div class="food-footer">
+                  <span class="food-price">Rp 25.000</span>
+                  <button class="btn-add-to-order" onclick="orderWA('Katsubie Rice Box', 'Rp 25.000')">
+                    <i class="bi bi-bag-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- KIMBAB -->
+      <div class="menu-pane" id="tab-kimbab">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="food-card">
+              <div class="food-img-wrap">
+                <img src="/assets/foto/katalog/kimbab/1.jpg" alt="Kimbab Campue">
+                <div class="food-badge badge-green">✅ Best Saler</div>
+                <div class="food-overlay">
+                  <button class="btn-order-now" onclick="orderWA('Kimbab Campue', 'Rp 28.000')">
+                    <i class="bi bi-whatsapp me-1"></i> Order Sekarang
+                  </button>
+                </div>
+              </div>
+              <div class="food-body">
+                <div class="food-meta">
+                  <span class="food-cat">Kimbab</span>
+                  <div class="food-stars">★★★★★</div>
+                </div>
+                <h4 class="food-name">Kimbab Campue</h4>
+                <p class="food-desc">Kimbab isian lengkap — daging sapi, telur, wortel, timun, dan saus wijen yang harum.</p>
+                <div class="food-footer">
+                  <span class="food-price">Rp 28.000</span>
+                  <button class="btn-add-to-order" onclick="orderWA('Kimbab Campue', 'Rp 28.000')">
+                    <i class="bi bi-bag-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="food-card">
+              <div class="food-img-wrap">
+                <img src="https://images.unsplash.com/photo-1617196034183-421b4040ed20?w=500&q=80" alt="Kimbab Tuna">
+                <div class="food-badge badge-blue">🐟 Favorit</div>
+                <div class="food-overlay">
+                  <button class="btn-order-now" onclick="orderWA('Kimbab Tuna Special', 'Rp 32.000')">
+                    <i class="bi bi-whatsapp me-1"></i> Order Sekarang
+                  </button>
+                </div>
+              </div>
+              <div class="food-body">
+                <div class="food-meta">
+                  <span class="food-cat">Kimbab</span>
+                  <div class="food-stars">★★★★★</div>
+                </div>
+                <h4 class="food-name">Kimbab Tuna Special</h4>
+                <p class="food-desc">Paduan tuna segar dengan mayones spesial dan sayuran crispy, dibungkus nori premium.</p>
+                <div class="food-footer">
+                  <span class="food-price">Rp 32.000</span>
+                  <button class="btn-add-to-order" onclick="orderWA('Kimbab Tuna Special', 'Rp 32.000')">
+                    <i class="bi bi-bag-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- BURGER -->
+      <div class="menu-pane" id="tab-burger">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="food-card">
+              <div class="food-img-wrap">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&q=80" alt="Burgersbie Beef">
+                <div class="food-badge badge-yellow">🆕 New</div>
+                <div class="food-overlay">
+                  <button class="btn-order-now" onclick="orderWA('Burgersbie Beef Biasa', 'Rp 11.000')">
+                    <i class="bi bi-whatsapp me-1"></i> Order Sekarang
+                  </button>
+                </div>
+              </div>
+              <div class="food-body">
+                <div class="food-meta">
+                  <span class="food-cat">Burger</span>
+                  <div class="food-stars">★★★★☆</div>
+                </div>
+                <h4 class="food-name">Burgersbie Beef (Biasa)</h4>
+                <p class="food-desc">Burger daging sapi dengan roti soft bun, saus tomat, mustard, dan selada segar.</p>
+                <div class="food-footer">
+                  <span class="food-price">Rp 11.000</span>
+                  <button class="btn-add-to-order" onclick="orderWA('Burgersbie Beef Biasa', 'Rp 11.000')">
+                    <i class="bi bi-bag-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="food-card">
+              <div class="food-img-wrap">
+                <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=500&q=80" alt="Burgersbie Double">
+                <div class="food-badge badge-red">🔥 Hot Pick</div>
+                <div class="food-overlay">
+                  <button class="btn-order-now" onclick="orderWA('Burgersbie Double Beef', 'Rp 18.000')">
+                    <i class="bi bi-whatsapp me-1"></i> Order Sekarang
+                  </button>
+                </div>
+              </div>
+              <div class="food-body">
+                <div class="food-meta">
+                  <span class="food-cat">Burger</span>
+                  <div class="food-stars">★★★★★</div>
+                </div>
+                <h4 class="food-name">Burgersbie Double Beef</h4>
+                <p class="food-desc">Double patty daging sapi dengan keju meleleh, saus BBQ smoky, dan onion rings renyah.</p>
+                <div class="food-footer">
+                  <span class="food-price">Rp 18.000</span>
+                  <button class="btn-add-to-order" onclick="orderWA('Burgersbie Double Beef', 'Rp 18.000')">
+                    <i class="bi bi-bag-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- KEBAB -->
+      <div class="menu-pane" id="tab-kebab">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="food-card">
+              <div class="food-img-wrap">
+                <img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?w=500&q=80" alt="Lumpia Beef Bie">
+                <div class="food-badge badge-purple">✨ Signature</div>
+                <div class="food-overlay">
+                  <button class="btn-order-now" onclick="orderWA('Lumpia Beef Bie', 'Rp 12.000')">
+                    <i class="bi bi-whatsapp me-1"></i> Order Sekarang
+                  </button>
+                </div>
+              </div>
+              <div class="food-body">
+                <div class="food-meta">
+                  <span class="food-cat">Kebab</span>
+                  <div class="food-stars">★★★★★</div>
+                </div>
+                <h4 class="food-name">Lumpia Beef Bie</h4>
+                <p class="food-desc">Kebab daging sapi asli dibalut kulit lumpia tipis yang crispy, dengan bumbu rempah pilihan.</p>
+                <div class="food-footer">
+                  <span class="food-price">Rp 12.000</span>
+                  <button class="btn-add-to-order" onclick="orderWA('Lumpia Beef Bie', 'Rp 12.000')">
+                    <i class="bi bi-bag-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="food-card">
+              <div class="food-img-wrap">
+                <img src="https://images.unsplash.com/photo-1595587637401-83ff822bd63e?w=500&q=80" alt="Kebab Jumbo">
+                <div class="food-badge badge-gold">💎 Premium</div>
+                <div class="food-overlay">
+                  <button class="btn-order-now" onclick="orderWA('Kebab Jumbo Special', 'Rp 22.000')">
+                    <i class="bi bi-whatsapp me-1"></i> Order Sekarang
+                  </button>
+                </div>
+              </div>
+              <div class="food-body">
+                <div class="food-meta">
+                  <span class="food-cat">Kebab</span>
+                  <div class="food-stars">★★★★★</div>
+                </div>
+                <h4 class="food-name">Kebab Jumbo Special</h4>
+                <p class="food-desc">Ukuran jumbo dengan isian daging berlimpah, keju, sayuran segar, dan saus rahasia Katsubie.</p>
+                <div class="food-footer">
+                  <span class="food-price">Rp 22.000</span>
+                  <button class="btn-add-to-order" onclick="orderWA('Kebab Jumbo Special', 'Rp 22.000')">
+                    <i class="bi bi-bag-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY KATSUBIE / FEATURES STRIP -->
+<section class="features-section">
+  <div class="container">
+    <div class="features-grid">
+      <div class="feature-item" data-aos="fade-up" data-aos-delay="0">
+        <div class="feature-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+        <h5>Cepat & Fresh</h5>
+        <p>Dimasak saat dipesan. Selalu fresh, tidak pernah reheat.</p>
+      </div>
+      <div class="feature-item" data-aos="fade-up" data-aos-delay="100">
+        <div class="feature-icon"><i class="bi bi-shield-fill-check"></i></div>
+        <h5>Halal & Higienis</h5>
+        <p>Bahan bersertifikat halal, dapur bersih, standar tinggi.</p>
+      </div>
+      <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
+        <div class="feature-icon"><i class="bi bi-wallet2"></i></div>
+        <h5>Harga Bersahabat</h5>
+        <p>Kualitas premium dengan harga yang tetap merakyat.</p>
+      </div>
+      <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
+        <div class="feature-icon"><i class="bi bi-whatsapp"></i></div>
+        <h5>Order via WA</h5>
+        <p>Pesan mudah lewat WhatsApp, siap dalam hitungan menit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONY -->
+<section id="testimony" class="testimony-section">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <div class="section-eyebrow">Kata Mereka</div>
+      <h2 class="section-heading center">Pelanggan <em>Berbicara</em></h2>
+    </div>
+    <div class="row g-4 mt-2">
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="testimony-card">
+          <div class="test-quote">"</div>
+          <p class="test-text">Katsu-nya beneran renyah banget dan ngga cepet lempem. Udah jadi langganan tetap setiap minggu!</p>
+          <div class="test-stars">★★★★★</div>
+          <div class="test-profile">
+            <div class="test-avatar">IS</div>
+            <div>
+              <strong>Isal</strong>
+              <span>Mahasiswa UPI Garut</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="testimony-card featured-test">
+          <div class="test-quote">"</div>
+          <p class="test-text">Saya sudah join franchise Katsubie dan hasilnya luar biasa! Omzet stabil setiap bulan, support dari pusat sangat bagus.</p>
+          <div class="test-stars">★★★★★</div>
+          <div class="test-profile">
+            <div class="test-avatar">AG</div>
+            <div>
+              <strong>Agus</strong>
+              <span>Mitra Franchise Bandung</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+        <div class="testimony-card">
+          <div class="test-quote">"</div>
+          <p class="test-text">Kimbab-nya seger banget! Langsung inget kimbab Korea asli. Porsinya juga gede, worth it banget.</p>
+          <div class="test-stars">★★★★★</div>
+          <div class="test-profile">
+            <div class="test-avatar">AS</div>
+            <div>
+              <strong>Asep</strong>
+              <span>Karyawan Swasta Garut</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section id="location" class="location-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5" data-aos="fade-right" data-aos-duration="800">
+        <div class="section-eyebrow">Temukan Kami</div>
+        <h2 class="section-heading">Kunjungi Kedai<br><em>Pusat Kami</em></h2>
+        <div class="location-info-cards">
+          <div class="loc-card">
+            <div class="loc-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div>
+              <strong>Alamat</strong>
+              <p>Jl. Cimanuk bunderan leuwi daun No.347, Jayawaras, Kec. Tarogong Kidul, Kabupaten Garut, Jawa Barat 44151</p>
+            </div>
+          </div>
+          <div class="loc-card">
+            <div class="loc-icon"><i class="bi bi-clock-fill"></i></div>
+            <div>
+              <strong>Jam Buka</strong>
+              <p>Setiap Hari: 10.00 – 21.00 WIB</p>
+            </div>
+          </div>
+          <div class="loc-card">
+            <div class="loc-icon"><i class="bi bi-telephone-fill"></i></div>
+            <div>
+              <strong>Kontak</strong>
+              <p>+62 812-3456-7890</p>
+            </div>
+          </div>
+        </div>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Katsubie,+Jl.+Cimanuk+bunderan+leuwi+daun+No.347,+Jayawaras,+Kec.+Tarogong+Kidul,+Kabupaten+Garut,+Jawa+Barat+44151" target="_blank" class="btn-direction">
+          <i class="bi bi-map-fill me-2"></i>Petunjuk Arah
+        </a>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left" data-aos-duration="800">
+        <div class="map-wrapper">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.5734772201267!2d107.89898699999999!3d-7.208811899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68b1005f849dcd%3A0x2f62e9d3d784d5ce!2sKatsuBie!5e1!3m2!1sid!2sid!4v1781368754259!5m2!1sid!2sid"
+            width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <div class="cta-orb"></div>
+    <div class="container text-center" data-aos="zoom-in">
+      <h2 class="cta-title">Lapar? <em>Kami Siap!</em></h2>
+      <p class="cta-desc">Order sekarang via WhatsApp dan dapatkan pengalaman kuliner terbaik Garut.</p>
+      <a href="https://wa.me/6281234567890?text=Halo%20Katsubie!%20Saya%20mau%20pesan%20menu..." target="_blank" class="btn-cta-main">
+        <i class="bi bi-whatsapp me-2"></i> Chat & Order Sekarang
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-top row g-5">
+      <div class="col-lg-4">
+        <div class="footer-brand">
+          <i class="bi bi-fire"></i> KATSUBIE
+        </div>
+        <p class="footer-tagline">Authentic street food dari Garut. Rasa yang bikin rindu, harga yang bikin senyum.</p>
+        <div class="footer-socials">
+          <a href="#" class="social-btn"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="social-btn tiktok"><i class="bi bi-tiktok"></i></a>
+          <a href="https://wa.me/6281234567890" target="_blank" class="social-btn wa"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6 class="footer-col-title">Navigasi</h6>
+        <ul class="footer-links">
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#catalog">Menu</a></li>
+          <li><a href="#testimony">Ulasan</a></li>
+          <li><a href="#location">Lokasi</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-lg-2">
+        <h6 class="footer-col-title">Menu</h6>
+        <ul class="footer-links">
+          <li><a href="#">Katsu</a></li>
+          <li><a href="#">Kimbab</a></li>
+          <li><a href="#">Burger</a></li>
+          <li><a href="#">Kebab</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <h6 class="footer-col-title">Hubungi Kami</h6>
+        <div class="footer-contact-item">
+          <i class="bi bi-envelope-fill"></i>
+          <span>katsubie@gmail.com</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="bi bi-telephone-fill"></i>
+          <span>+62 812-3456-7890</span>
+        </div>
+        <div class="footer-contact-item">
+          <i class="bi bi-geo-alt-fill"></i>
+          <span>Garut, Jawa Barat</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 <strong>Katsubie</strong>. Semua Hak Dilindungi.</p>
+      <p>Made with <span style="color:var(--red)">❤</span> in Garut</p>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WA BUTTON -->
+<a href="https://wa.me/6281234567890" target="_blank" class="float-wa" id="floatWA">
+  <i class="bi bi-whatsapp"></i>
+  <span class="float-wa-pulse"></span>
+</a>
+
+<!-- BACK TO TOP -->
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <i class="bi bi-chevron-up"></i>
+</button>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
